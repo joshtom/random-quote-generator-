@@ -46,7 +46,7 @@
                         <footer className="quote-footer"> — <span>{this.state.author}</span></footer>
                         <button className="btn btn-info" onClick={this.getQuote}> New Quote </button>
                         <a className="twitter-share-button btn btn-primary rounded ml-4"
-                        href="https://twitter.com/intent/tweet?text=Hello%20world"
+                        href={'https://twitter.com/intent/tweet?text=' + this.state.quote + ' - ' + this.state.author}
                         data-size="large"> Tweet
                         </a> 
                     </div>
